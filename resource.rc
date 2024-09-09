@@ -1,0 +1,116 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+#include <winres.h>
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MAINSCREEN DIALOGEX 29, 28, 400, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "MyMusicPlayer"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         ID_LIST1,8,28,239,100,LBS_SORT | WS_VSCROLL
+    PUSHBUTTON      "Play",ID_BUTTON1,76,170,36,20,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Stop",ID_BUTTON2,120,170,36,20,BS_FLAT,WS_EX_DLGMODALFRAME
+    CONTROL         "AutoRepeat",ID_REPEAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,171,63,20
+    DEFPUSHBUTTON   "Close",ID_BUTTON3,356,174,36,20,BS_FLAT,WS_EX_DLGMODALFRAME
+    CONTROL         "",ID_LYRIC,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP,264,52,120,10
+    CONTROL         "",ID_LYRICneg,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP,264,42,120,10
+    CONTROL         "",ID_LYRICpos,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP,264,62,120,10
+    LTEXT           "",ID_SHOWPATH,8,12,240,10,SS_SUNKEN
+    LTEXT           "Playing ",ID_SONGTITLE,8,127,100,10,SS_SUNKEN
+    CONTROL         "00:00/00:00",ID_TIMER,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP,190,127,50,10
+    CONTROL         "Volume",ID_YINLIANG0,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,168,159,30,10
+    CONTROL         "0",ID_YINLIANG0,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,174,188,8,10,WS_EX_TRANSPARENT
+    CONTROL         "100",ID_YINLIANG0,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,321,187,14,10
+    CONTROL         "Slider1",ID_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_ENABLESELRANGE | WS_TABSTOP,7,139,238,20
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,168,168,167,19,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    GROUPBOX        "Lyrics",IDC_STATIC,259,27,130,55,0,WS_EX_TRANSPARENT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    "MAINSCREEN", DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+MAINSCREEN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+500                     ICON                    "680070.ico"
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
